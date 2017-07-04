@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_header_view" />
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bg_white"
+        android:gravity="center_vertical"
+        android:hint="请输入主题"
+        android:imeOptions="actionNext"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:singleLine="true"
+        android:textColor="@color/text_poor_people_grey"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/et_helper"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bg_white"
+        android:gravity="center_vertical"
+        android:hint="请输入帮扶人"
+       
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:singleLine="true"
+        android:textColor="@color/text_poor_people_grey"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="0.4dp"
+        android:background="@color/bg_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="请输入日期"
+            android:textColor="@color/text_poor_people_grey"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/image_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ico_rqxz" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="0.4dp"
+        android:background="@color/bg_white"
+        android:gravity="center_vertical"
+        android:hint="请输入帮扶地址"
+        android:imeOptions="actionNext"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:singleLine="true"
+        android:textColor="@color/text_poor_people_grey"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/bg_white"
+        android:gravity="center_vertical"
+        android:hint="请输入帮扶内容"
+        android:imeOptions="actionNext"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textColor="@color/text_poor_people_grey"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/bg_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="上传图片"
+            android:textColor="@color/text_poor_people_grey"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/image_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:src="@drawable/ico_tjzp" />
+    </LinearLayout>
+
+    <com.internet.view.MyGridView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#afffffff"
+        android:columnWidth="60dp"
+        android:horizontalSpacing="6dp"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="6dp" />
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <com.internet.view.PoorPeopleInfoView_
+                    android:id="@+id/info1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.internet.view.PoorPeopleInfoView_
+                    android:id="@+id/info2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.internet.view.PoorPeopleInfoView_
+                    android:id="@+id/info3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.internet.view.PoorPeopleInfoView_
+                    android:id="@+id/info4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.internet.view.PoorPeopleInfoView_
+                    android:id="@+id/info5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.internet.view.PoorPeopleInfoView_
+                    android:id="@+id/info6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/bg_white"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/text_t"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:text="家庭成员"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@color/line_gray" />
+
+                <com.internet.view.ExpandListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@color/bg_main"
+                    android:dividerHeight="0dp"
+                    android:listSelector="#00000000"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
